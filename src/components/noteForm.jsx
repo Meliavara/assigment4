@@ -28,13 +28,25 @@ export const NoteForm = () => {
   }
 
   return (
-    <div>
-      <input value={name_0} onChange={(e) => setName_0(e.target.value)} />
-      <input value={email} onChange={(e) => setEmail(e.target.value)}></input>
+    <div className="border border-gray-300 px-5 py-5 rounded-lg shadow-lg">
+      <input
+        value={name_0}
+        onChange={(e) => setName_0(e.target.value)}
+        className="my-0.5 rounded-lg"
+      />
+      <input
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        className="my-0.5 rounded-lg"
+      ></input>
       <select
         value={destination}
         onChange={(e) => setDestinantion(e.target.value)}
+        className="border-2 rounded-lg border-gray-200 my-0.5"
       >
+        <option disable selected value="">
+          Pilih Lantai
+        </option>
         <option value="Lantai.1">Lantai 1</option>
         <option value="Lantai.2">Lantai 2</option>
         <option value="Lantai.3">Lantai 3</option>
@@ -44,8 +56,11 @@ export const NoteForm = () => {
       <textarea
         value={information}
         onChange={(e) => setInformation(e.target.value)}
+        className="my-0.5 rounded-lg"
       ></textarea>
-      <button onClick={handleCreateData}>Create</button>
+      <button onClick={handleCreateData} className="my-1">
+        Create
+      </button>
     </div>
   );
 };

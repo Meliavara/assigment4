@@ -18,16 +18,18 @@ export const NoteCard = ({ item }) => {
   }
 
   return (
-    <div>
+    <div className="font-white">
       <h3 className="text-medium font-semibold">{item.name_0}</h3>
-      <h4 className="text-medium font-light text-slate-900">{item.email}</h4>
-      <h4 className="text-medium font-light text-slate-900">
+      <h4 className="text-medium font-normal text-slate-900">{item.email}</h4>
+      <h4 className="text-medium font-normal text-slate-900">
         {item.destination}
       </h4>
-      <p className="text-medium font-light text-slate-900">
+      <p className="text-medium font-normal text-slate-900">
         {item.information}
       </p>
-      <button onClick={handleDeleteData}>Delete</button>
+      <button onClick={handleDeleteData} className="my-2">
+        Delete
+      </button>
     </div>
   );
 };
