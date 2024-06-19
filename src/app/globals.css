@@ -6,6 +6,7 @@
   input,
   textarea {
     @apply block w-full border-2 p-3 rounded-lg;
+    @apply text-inherit;
   }
   button {
     @apply bg-indigo-500 text-white px-3 py-2 rounded-lg;

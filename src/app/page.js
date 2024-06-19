@@ -16,7 +16,7 @@ export default async function Home() {
         {data.map((item) => (
           <div
             key={item._id}
-            className="xl:w-1/4 bg-slate-50 border border-gray-200 px-4 py-4 rounded-md shadow-md m-4"
+            className="xl:w-1/5 bg-slate-50 border border-gray-200 px-4 py-4 rounded-md shadow-md m-4"
           >
             <NoteCard item={item} />
           </div>

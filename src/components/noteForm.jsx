@@ -28,35 +28,35 @@ export const NoteForm = () => {
   }
 
   return (
-    <div className="border border-gray-300 px-5 py-5 rounded-lg shadow-lg">
+    <div className="border border-gray-300 px-5 py-5 rounded-lg shadow-lg space-y-4">
       <input
         value={name_0}
+        placeholder="Name Visitor"
         onChange={(e) => setName_0(e.target.value)}
-        className="my-0.5 rounded-lg"
       />
       <input
         value={email}
+        placeholder="Email"
         onChange={(e) => setEmail(e.target.value)}
-        className="my-0.5 rounded-lg"
       ></input>
       <select
         value={destination}
         onChange={(e) => setDestinantion(e.target.value)}
-        className="border-2 rounded-lg border-gray-200 my-0.5"
+        className="border border-gray-300 rounded-lg p-2 font-normal"
       >
         <option disable selected value="">
-          Pilih Lantai
+          Select Floor
         </option>
-        <option value="Lantai.1">Lantai 1</option>
-        <option value="Lantai.2">Lantai 2</option>
-        <option value="Lantai.3">Lantai 3</option>
-        <option value="Lantai.4">Lantai 4</option>
-        <option value="Lantai.5">Lantai 5</option>
+        <option value="1st Floor">1st Floor</option>
+        <option value="2nd Floor">2nd Floor</option>
+        <option value="3rd Floor">3rd Floor</option>
+        <option value="4th Floor">4th Floor</option>
+        <option value="5th Floor">5th Floor</option>
       </select>
       <textarea
         value={information}
+        placeholder="Information"
         onChange={(e) => setInformation(e.target.value)}
-        className="my-0.5 rounded-lg"
       ></textarea>
       <button onClick={handleCreateData} className="my-1">
         Create
